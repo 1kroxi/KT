@@ -19,3 +19,11 @@ def decode_string(string):
         else:
             result += ')'
     return result
+def get_odd_count(str):
+    count = 0
+    chetni = ['2','4','6','8']
+    for int in str:
+        if int in chetni:
+            count +=1
+    return count
+    
