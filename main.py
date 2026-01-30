@@ -26,4 +26,11 @@ def get_odd_count(str):
         if int in chetni:
             count +=1
     return count
-    
+def check_access(has_keycard,has_fingerprint,is_alarm,is_daylight):
+    if is_alarm:
+        return False
+    if has_fingerprint:
+        return True
+    if has_keycard and is_daylight:
+        return True
+    return False    
